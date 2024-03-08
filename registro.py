@@ -22,3 +22,7 @@ def notificar_eventos_proximos():
             print(f"{evento['nombre']} - {evento['fecha']}: {evento['descripcion']}")
     else:
         print("No hay eventos próximos en los siguientes 3 días")
+
+registrar_eventos("Concierto de Imagine Dragons ", datetime(2024, 3, 7).date(), "Concierto en vivo apertura del tour 2024")
+registrar_eventos("Conferencia de Python", datetime(2024, 3, 10).date(), "Aprende las novedades de python para este 2024")
+notificar_eventos_proximos()
